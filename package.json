@@ -4,14 +4,17 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp & node server.js & npm run sync",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "browser-sync start --proxy 'localhost:3000' --files 'build/public/**'",
+    "kill": "killall gulp node"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^4.7.3",
     "babel-loader": "^4.1.0",
+    "browser-sync": "^2.2.3",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-load-plugins": "^0.8.1",

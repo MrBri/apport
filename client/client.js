@@ -1,6 +1,8 @@
 import React from 'react/addons'
 
+// var helloWorld = React.createClass();
+
 React.render(
-  <h1>Hello, world!</h1>,
+  <h1>Goodbye, world out there!</h1>,
   document.body
 );

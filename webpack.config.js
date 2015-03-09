@@ -1,4 +1,5 @@
 module.exports = {
+  watch: true,
   entry: './client/client.js',
   output: {
     path: __dirname,
